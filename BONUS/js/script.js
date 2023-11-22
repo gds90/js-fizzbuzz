@@ -4,22 +4,18 @@ let li;
 for (let num = 1; num <= 100; num++){
     // controllo che il numero sia multiplo sia di 3 che di 5, in quel caso stampo FizzBuzz in console
     if (num % 3 == 0 && num % 5 == 0){
-        console.log("FizzBuzz");
         li = `<li>Il numero ${num} è multiplo di 3 e di 5, FizzBuzz</li>`;
 
     // controllo che il numero sia multipo di 3, in quel caso stampo Fizz in console
     } else if (num % 3 == 0) {
-        console.log("Fizz");
         li = `<li>Il numero ${num} è multiplo di 3, Fizz</li>`;
 
     // controllo che il numero sia multipo di 5, in quel caso stampo Buzz in console
     } else if (num % 5 == 0) {
-        console.log("Buzz");
         li = `<li>Il numero ${num} è multiplo di 5, Buzz</li>`;
 
     // altrimenti, stampo semplicemente il numero in console
     } else {
-        console.log(num);
         li = `<li>Numero ${num}</li>`;
     }
     list.innerHTML += li;
